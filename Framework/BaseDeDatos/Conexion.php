@@ -212,10 +212,5 @@
             $this->Conectar();
             return $this->coConexion->ejecutarEscalar($psConsulta, $pbStatus);
         }
-
-        function Desconectar()
-        {
-            $this->Desconectar();
-        }
     }
 ?>

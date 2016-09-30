@@ -10,7 +10,7 @@
 	$poConexion = NULL;
 	if($poSesion->get('poConexion') == false)
 	{
-		$poConexion = new Conexion('192.168.12.151','root', 'urbano123', 'catalogos', 'MySQL');
+		$poConexion = new Conexion('192.168.12.151','root', 'urbano123', 'ITTWEBPAGE', 'MySQL');
 	}
 	else
 	{

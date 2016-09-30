@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<meta http-equiv="refresh" content="4">
+	<!-- <meta http-equiv="refresh" content="20"> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -30,7 +30,23 @@
 	 				<div class="collapse navbar-collapse" id="navbar-principal">
 	 					<ul class="nav navbar-nav">
 	 						<li><a href="">Item #1</a></li>
-	 						<li ><a href="">Item #2</a></li>
+	 						<li class="dropdown">
+	 							<a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button">Dropdown <span class="caret"></span></a>
+	 							<ul class="dropdown-menu">
+	 								<li><a href="#">Item #1</a></li>
+	 								<li><a href="#">Item #2</a></li>
+	 								<li class="dropdown">
+			 							<a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button">Dropdown <span class="caret"></span></a>
+			 							<ul class="dropdown-menu">
+			 								<li><a href="#">Item #1</a></li>
+			 								<li><a href="#">Item #2</a></li>
+			 								<li><a href="#">Item #3</a></li>
+			 								<li><a href="#">Item #4</a></li>
+			 							</ul>
+			 						</li>
+	 								<li><a href="#">Item #4</a></li>
+	 							</ul>
+	 						</li>
 	 						<li><a href="">Item #3</a>
 	 						</li>
 	 					</ul>
