@@ -29,11 +29,26 @@
 		{
 			$query = new StringBuilder();
 			$query->appendFormat('SELECT COUNT(*) FROM NAV_CONF WHERE NC_ID_PADRE={0}',[$data['NC_ID_ELEMENTO']]);
+			//echo $query->toString();
 			$noHijos = $Conexion->ejecutarEscalar($query->toString());
 
 			if($noHijos > 0)
 			{
-				$salida->append('');
+				$salida->appendFormat('
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button">
+							{1} 
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							{0}
+						</ul>
+					</li>
+					',[regresaBotones($Conexion,$data['NC_ID_ELEMENTO'], $contador + 1)
+					 , $data['NC_DESCRIPCION']
+					 , $data['NC_HREF']]);
+				//echo $salida->toString();
+
 			}
 			else
 			{
