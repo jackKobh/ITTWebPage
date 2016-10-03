@@ -24,4 +24,4 @@ footer{
 
 
 .carousel-inner { text-align: center; }
-.carousel .item > img { display: inline-block; }
+.carousel .item a> img { display: inline-block; }
